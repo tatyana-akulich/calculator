@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="division">
+    <test name="divisiontests">
+        <groups>
+            <run>
+                <include name="Division"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="by.teachmeskills.calculator.basicoperations.DivideTest"/>
+            <class name="by.teachmeskills.calculator.InfinityTest"/>
+            <class name="by.teachmeskills.calculator.NotANumberTest"/>
+        </classes>
+    </test>
+</suite>
