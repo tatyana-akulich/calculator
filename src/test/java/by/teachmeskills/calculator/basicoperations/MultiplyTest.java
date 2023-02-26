@@ -20,6 +20,6 @@ public class MultiplyTest extends BaseTest {
     public void testDividePositive(String mult1, String mult2, String result) {
         assertThat(calculator.miltiply(mult1, mult2)).
                 as("Result is wrong").
-                isCloseTo(Double.valueOf(result), Percentage.withPercentage(0.1));
+                isEqualTo(Double.valueOf(result));
     }
 }

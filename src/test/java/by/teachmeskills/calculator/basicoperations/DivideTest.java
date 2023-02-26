@@ -29,7 +29,7 @@ public class DivideTest extends BaseTest {
     public void testDividePositive(String divd, String divr, String result) {
         assertThat(calculator.divide(divd, divr)).
                 as("Result is wrong").
-                isCloseTo(Double.valueOf(result), Percentage.withPercentage(0.1));
+                isEqualTo(Double.valueOf(result));
     }
 
     @AfterMethod(groups = "Division")

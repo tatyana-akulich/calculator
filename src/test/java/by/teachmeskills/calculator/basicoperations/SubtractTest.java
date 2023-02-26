@@ -20,6 +20,6 @@ public class SubtractTest extends BaseTest {
     public void testAddPositive(String min, String sub, String result) {
         assertThat(calculator.subtract(min, sub)).
                 as("Sum is wrong").
-                isCloseTo(Double.valueOf(result), Percentage.withPercentage(0.1));
+                isEqualTo(Double.valueOf(result));
     }
 }

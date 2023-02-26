@@ -32,7 +32,7 @@ public class AddTest extends BaseTest {
     public void testAddPositive(String add1, String add2, String result) {
         assertThat(calculator.add(add1, add2)).
                 as("Sum is wrong").
-                isCloseTo(Double.valueOf(result), Percentage.withPercentage(0.1));
+                isEqualTo(Double.valueOf(result));
     }
 
     @AfterTest
