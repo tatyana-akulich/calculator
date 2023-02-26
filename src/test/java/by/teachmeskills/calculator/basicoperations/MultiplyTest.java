@@ -1,6 +1,7 @@
 package by.teachmeskills.calculator.basicoperations;
 
 import by.teachmeskills.calculator.BaseTest;
+import by.teachmeskills.util.RetryAnalyzer;
 import org.assertj.core.data.Percentage;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
