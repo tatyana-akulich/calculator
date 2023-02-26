@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke" parallel="tests" thread-count="2">
+    <test name="add_subtract">
+        <classes>
+            <class name="by.teachmeskills.calculator.basicoperations.AddTest"/>
+            <class name="by.teachmeskills.calculator.basicoperations.SubtractTest"/>
+        </classes>
+    </test>
+    <test name="multiply_divide">
+        <classes>
+            <class name="by.teachmeskills.calculator.basicoperations.DivideTest"/>
+            <class name="by.teachmeskills.calculator.basicoperations.MultiplyTest"/>
+        </classes>
+    </test>
+</suite>
